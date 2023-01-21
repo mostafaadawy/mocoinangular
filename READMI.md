@@ -20,7 +20,9 @@ do not forget to check the following links for angular
   1- `npm install -g @angular/cli`
   2- `ng new mocoinangular`
   3- `cd mocoinangular`
-  4- to check and start `npm run start`
+  4- to check and start `npm run start` which equals `ng serve`
 
 # edit app component adding bootstrap CDN
-check bootstrap [link](https://getbootstrap.com/)
+- check bootstrap [link](https://getbootstrap.com/)
+- adding navbar and router link to nave to allaow routing angular syntax
+
