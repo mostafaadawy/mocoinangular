@@ -6,6 +6,14 @@ it is recommended to check the first blockchain project especially readme from t
 here are the steps to implement the project 
 
 do not forget to check the following links for angular
+- [Learn Angular](https://angular.io/tutorial)
+- [CLI Documentation](https://angular.io/cli)
+- [Angular Material](https://material.angular.io)
+- [Angular Blog](https://blog.angular.io/)
+- [Angular DevTools](https://angular.io/devtools/)
+- [Meetup Logo](https://www.meetup.com/find/?keywords=angular)
+- [Discord Logo](https://discord.gg/angular)
+- [Love Angular?](https://github.com/angular/angular)
 
 
 # installing angular 
