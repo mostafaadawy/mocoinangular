@@ -31,4 +31,5 @@ do not forget to check the following links for angular
 - to do that we need to add this file dependancy such as crypto and elliptic `npm i --save crypto-js` and `npm i --save elliptic`
 - for every service we want to allow to our app we have to call apply it through angular services
 - so for our blockchain we have to call instance of our class and create the required functions to it from our class taking ito consideration wrt our block chain [repo](https://github.com/mostafaadawy/block_chain_coin) where main file testing will be done through front end angular
-- 
+- adding new component blockchain viewr  by cmd `ng g component pages/blockchain-viewer`
+
