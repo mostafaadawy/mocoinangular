@@ -25,4 +25,5 @@ do not forget to check the following links for angular
 # edit app component adding bootstrap CDN
 - check bootstrap [link](https://getbootstrap.com/)
 - adding navbar and router link to nave to allaow routing angular syntax
+adding service to allow blockchain service and wallet using `ng g service services/blockchain` where `g` for generate and `ng` for angular cli command `services` just to create a folder
 
