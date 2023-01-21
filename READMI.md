@@ -25,5 +25,7 @@ do not forget to check the following links for angular
 # edit app component adding bootstrap CDN
 - check bootstrap [link](https://getbootstrap.com/)
 - adding navbar and router link to nave to allaow routing angular syntax
-adding service to allow blockchain service and wallet using `ng g service services/blockchain` where `g` for generate and `ng` for angular cli command `services` just to create a folder
-
+- adding service to allow blockchain service and wallet using `ng g service services/blockchain` where `g` for generate and `ng` for angular cli command `services` just to create a folder
+- modifying the service.ts `typescript` to have all required  methods.
+- before previous step we have to install github savjee repo using `npm i --save github:Savjee\SavjeeCoin`  but in this step i selected another way where i copied our blockchain classes file in the new project and import it to the service file but with some modifications to become typescript compatible this file can be found in our [repo](https://github.com/mostafaadawy/block_chain_coin)
+- to do that we need to add this file dependancy such as crypto and elliptic `npm i --save crypto-js` and `npm i --save elliptic`
