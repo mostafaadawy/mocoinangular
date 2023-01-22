@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BlockchainViewerComponent } from './pages/blockchain-viewer/blockchain-viewer.component';
 import { BlockViewerComponent } from './pages/block-viewer/block-viewer.component';
+import { TransactionsTableComponent } from './pages/transactions-table/transactions-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlockchainViewerComponent,
-    BlockViewerComponent
+    BlockViewerComponent,
+    TransactionsTableComponent
   ],
   imports: [
     BrowserModule,

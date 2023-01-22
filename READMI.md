@@ -58,4 +58,4 @@ const routes: Routes = [
   { path:'', component: BlockchainViewerComponent}
 ];
 ```
-- 
+- create transaction table component `ng g component pages/transactions-table`
