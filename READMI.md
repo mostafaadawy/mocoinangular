@@ -118,4 +118,5 @@ in `ts` we have to call our blockchain service to allow sending data to it
 - create component pendingTransactions `ng g component pending/pending-transactions`
 - create minePendingTransaction to be connectied from html
 - reusing our table component in html
+- creating button and route
 
