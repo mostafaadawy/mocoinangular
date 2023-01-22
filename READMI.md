@@ -31,10 +31,12 @@ do not forget to check the following links for angular
 - to do that we need to add this file dependancy such as crypto and elliptic `npm i --save crypto-js` and `npm i --save elliptic`
 - for every service we want to allow to our app we have to call apply it through angular services
 - so for our blockchain we have to call instance of our class and create the required functions to it from our class taking ito consideration wrt our block chain [repo](https://github.com/mostafaadawy/block_chain_coin) where main file testing will be done through front end angular
-- adding new component blockchain viewr  by cmd `ng g component pages/blockchain-viewer`
 - adding some packages to json and editing prettier and eslint tsconfig to work on target es2015 and lin 2018
 - in blockchaindervice file  import elliptic to replace our keygenerator class to generate our sining key abd address/public and our blockchain classes then create public array to save keys and in constructor call an instance for blockchain
 - we have to taking into account that service file is in typescript so we have to edit our tsconfig to work on the right js version es2018 and target is es2015
 - for type script array must be declared as interface and define the type : Array<interface> that contains the keys
 - create generate key method to generate keys using elliptic and calls this in the constructor of the service to be ready
-- 
+- adding new component blockchain viewer  by cmd `ng g component pages/blockchain-viewer`
+- in html use container class and to access the blocks from service we have to use same component ts file code to connect the date to html element
+- in the ts code file constructor call the service get all blocks in array then  to use it
+- create block-view to contain the date for the block `ng g component pages/block-viewer`
