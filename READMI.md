@@ -119,4 +119,11 @@ in `ts` we have to call our blockchain service to allow sending data to it
 - create minePendingTransaction to be connectied from html
 - reusing our table component in html
 - creating button and route
+- error solved creating component in wrong folder when removed  caused error in `app.module` we solved it wrong by removing the wrong import while we should modify its new path even it was in declaration module it gives error where wrong import ->solved by return the import and just rename to right path of the component the error was 
+```sh
+Error: src/app/pages/pending-transactions/pending-transactions.component.html:4:3 - error NG8002: Can't bind to 'transactions' since it isn't a known property of 'app-transactions-table'.
+1. If 'app-transactions-table' is an Angular component and it has 'transactions' input, then verify that it is part of this module.
+2. If 'app-transactions-table' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.    
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.
+```
 

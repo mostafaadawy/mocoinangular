@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TransactionsTableComponent implements OnInit {
   @Input() public transactions=[]
   constructor(){
-    console.log('Transaction: ',this.transactions)
+    //console.log('Transaction: ',this.transactions)
   }
   ngOnInit(): void {
 
