@@ -42,3 +42,13 @@ do not forget to check the following links for angular
 - create block-view to contain the date for the block `ng g component pages/block-viewer`
 - prepare the html component and its ts to get data to provide it to its render
 - editing the style sheet to make style to the card
+- returning to the blockchain viewer to use block component
+- where usin `<app-component-name : pathing data> calling other component </app-component-name>`
+ ```sh
+  <app-block-viewer
+    *ngFor="let block of blocks"
+        [block]="block"
+  ></app-block-viewer>
+ ```
+- where block passed down to block view ts while blocks comes from blockchain ts component which comes from service 
+- 
