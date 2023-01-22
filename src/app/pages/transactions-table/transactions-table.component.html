@@ -1,1 +1,49 @@
-<p>transactions-table works!</p>
+<p *ngIf="transactions.length===0">This Block Has No Transactions</p>
+
+<table class="table-hover table-striped"
+      *ngIf="transactions.length>0"
+>
+<thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">From</th>
+    <th scope="col">To</th>
+    <th scope="col">Amount</th>
+    <th scope="col">Timestamp</th>
+    <th scope="col">Vialed?</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let tx of transactions; index as index">
+    <td>{{ index }}</td>
+    <td class="text-truncate" style="max-width: 100px">
+      {{ tx.fromAddress }}
+      <span *ngIf="tx.fromAddress===null">System</span>
+    </td>
+    <td class="text-truncate" style="max-width: 100px">
+      {{ tx.toAddress }}
+    </td>
+    <td>
+      {{ tx.amount }}
+      <span *ngIf="tx.fromAddress===null" class="text-muted">
+        <br>
+        <small>
+          (Block Reward)
+        </small>
+      </span>
+    </td>
+    <td>
+      {{ tx.timestamp }}
+      <span class="text-muted">
+        <small>
+          {{ tx.timestamp | date:'MMM d, y, HH:mm'}}
+        </small>
+      </span>
+    </td>
+    <td style="max-width:40px">
+      <span ngIf="tx.isVialed()">✔</span>
+      <span ngIf="!tx.isVialed()">✘</span>
+    </td>
+  </tr>
+</tbody>
+</table>

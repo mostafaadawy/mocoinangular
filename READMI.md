@@ -71,3 +71,5 @@ const routes: Routes = [
 - send it to component inputs ` [index]="elementIndex"`
 - in the child `ts` component add `@input() public index` 
 - in child `html` component call it `{{ index }} `
+- add transaction in transactions-table `ts` 
+- 
