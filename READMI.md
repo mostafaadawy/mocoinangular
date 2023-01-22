@@ -40,3 +40,5 @@ do not forget to check the following links for angular
 - in html use container class and to access the blocks from service we have to use same component ts file code to connect the date to html element
 - in the ts code file constructor call the service get all blocks in array then  to use it
 - create block-view to contain the date for the block `ng g component pages/block-viewer`
+- prepare the html component and its ts to get data to provide it to its render
+- editing the style sheet to make style to the card
