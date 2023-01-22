@@ -73,4 +73,19 @@ const routes: Routes = [
 - in child `html` component call it `{{ index }} `
 - add transaction in transactions-table `ts` 
 - in order to display the transaction when clicking the block we have to activate the calling function hosted in blockchain component first parent the scope that contains both transaction and block but the call have to come from block and this can be done by passing the bending function through the blockchain to block and activate or called from block
+- to implement that first add public object in first parent contain the selected block which will be the first block in the chain
+- add transaction table in the blockchain viewer
+- add calling click function to pass to block from blockchain `html` as follows:
+```sh
+ <app-block-viewer
+    *ngFor="let block of blocks;let elementIndex=index;"
+        [block]="block"
+        [index]="elementIndex"
+        (click)="showTransactions(block)"
+  ></app-block-viewer>
+```
+- calling function `(click)="showTransactions(block)"`
+- creating the function it self in `blockchain ts` 
 - 
+
+
