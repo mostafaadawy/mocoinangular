@@ -86,6 +86,7 @@ const routes: Routes = [
 ```
 - calling function `(click)="showTransactions(block)"`
 - creating the function it self in `blockchain ts` 
-- 
+- create setting view to set difficulty and reward amount and in this module we will use form model from angular to send data
+- `ng g component pages/settings`
 
 

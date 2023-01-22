@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { BlockchainViewerComponent } from './pages/blockchain-viewer/blockchain-viewer.component';
 import { BlockViewerComponent } from './pages/block-viewer/block-viewer.component';
 import { TransactionsTableComponent } from './pages/transactions-table/transactions-table.component';
+import { SettingsComponent } from './pages/settings/settings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlockchainViewerComponent,
     BlockViewerComponent,
-    TransactionsTableComponent
+    TransactionsTableComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
