@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class BlockViewerComponent implements OnInit{
   @Input() public block
+  @Input() public index
   constructor(){
 
   }

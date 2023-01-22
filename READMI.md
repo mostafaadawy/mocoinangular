@@ -59,3 +59,15 @@ const routes: Routes = [
 ];
 ```
 - create transaction table component `ng g component pages/transactions-table`
+- adding index to component or block and this is can done by first in the parent get the index from the for loop as in next code
+```sh
+<app-block-viewer
+    *ngFor="let block of blocks;let elementIndex=index;"
+        [block]="block"
+        [index]="elementIndex"
+  ></app-block-viewer>
+```
+- adding index in loop `;let elementIndex=index;`
+- send it to component inputs ` [index]="elementIndex"`
+- in the child `ts` component add `@input() public index` 
+- in child `html` component call it `{{ index }} `
