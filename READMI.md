@@ -109,4 +109,4 @@ in `ts` we have to call our blockchain service to allow sending data to it
 - first time to use 'ngOnInt method` in this project where the importance of that method is it will be called and do something when reloaded where on submit it will reload the field to be blank to receive new data or in other word creates new empty object transaction
 - and here the first time to call class Transaction from blockchain
 - create method createTransaction that will assign our public key as fromAddress and sign the transaction then create new object of transaction
-
+- 
