@@ -12,7 +12,7 @@ export class BlockViewerComponent implements OnInit{
 
   }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+
   }
 
 }

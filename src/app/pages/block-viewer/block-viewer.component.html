@@ -1,13 +1,13 @@
 <div class="card">
 <div class="card-body">
-  <h5 class="card-title">
+  <h5 class="card-title" style="font-size:x-large; font-weight:bolder">
     Block <small class="text-muted"
-      *.ngIf="block.previousHash==0">(Genesis Block)
+      *ngIf="block.previousHash==0">(Genesis Block)
     </small>
   </h5>
 </div>
 
-<ul class="list-group list-group-flush">
+<ul class="list-group list-group-flush" style="font-size:large">
   <li class="list-group-item">
     <span>
       Hash
@@ -16,7 +16,7 @@
     <div class="text-truncate"
     [style.color]="'#' + block.hash.substring(0,6)"
     >
-    <small>{{ block.hash }}</small>
+      <small>{{ block.hash }}</small>
     </div>
     <br>
     <span>
@@ -26,7 +26,7 @@
     <div class="text-truncate"
     [style.color]="'#' + block.previousHash.substring(0,6)"
     >
-    <small>{{ block.previousHash }}</small>
+      <small>{{ block.previousHash }}</small>
     </div>
   </li>
   <li class="list-group-item">
