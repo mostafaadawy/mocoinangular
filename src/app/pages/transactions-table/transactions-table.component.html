@@ -1,7 +1,7 @@
-<p *ngIf="transactions.length===0">This Block Has No Transactions</p>
+<p *ngIf="transactions.length === 0">This Block Has No Transactions</p>
 
-<table class="table-hover table-striped"
-      *ngIf="transactions.length>0"
+<table class="table table-hover table-striped" style="background-color: rgb(184, 235, 215);"
+      *ngIf="transactions.length > 0"
 >
 <thead>
   <tr>
@@ -41,8 +41,8 @@
       </span>
     </td>
     <td style="max-width:40px">
-      <span ngIf="tx.isVialed()">✔</span>
-      <span ngIf="!tx.isVialed()">✘</span>
+      <span *ngIf="tx.isValid()">✔</span>
+      <span *ngIf="!tx.isValid()">✘</span>
     </td>
   </tr>
 </tbody>
