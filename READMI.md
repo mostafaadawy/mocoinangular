@@ -110,5 +110,5 @@ in `ts` we have to call our blockchain service to allow sending data to it
 - and here the first time to call class Transaction from blockchain
 - create method createTransaction that will assign our public key as fromAddress and sign the transaction then create new object of transaction
 - make route to create-transaction component to be accessible 
-- `&nbsp` A non-breaking space is a space that will not break into a new line. Two words separated by a non-breaking space will stick together (not break into a new line). This is handy when breaking the words might be disruptive
-- 
+- `&nbsp` A non-breaking space is a space that will not break into a new line. Two words separated by a non-breaking space will stick together (not break into a new line). This is handy when breaking the words might be disruptive `it is important to be used in navbar to prevent new line and make code inline`
+- adding button for the link in navbar
