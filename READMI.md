@@ -72,4 +72,5 @@ const routes: Routes = [
 - in the child `ts` component add `@input() public index` 
 - in child `html` component call it `{{ index }} `
 - add transaction in transactions-table `ts` 
+- in order to display the transaction when clicking the block we have to activate the calling function hosted in blockchain component first parent the scope that contains both transaction and block but the call have to come from block and this can be done by passing the bending function through the blockchain to block and activate or called from block
 - 
