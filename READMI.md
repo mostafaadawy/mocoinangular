@@ -103,3 +103,5 @@ in `ts` we have to call our blockchain service to allow sending data to it
 - make a button in navbar to route to it using routerLink
 - create component for creating transaction but o allow this we have to create method addtransaction in blockchain service that calls pendTransaction with the required date
 - and also we will need form ngModel to send data
+- then create transaction component `ng g component pages/create-transaction`
+- 
