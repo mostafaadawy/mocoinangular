@@ -51,4 +51,11 @@ do not forget to check the following links for angular
   ></app-block-viewer>
  ```
 - where block passed down to block view ts while blocks comes from blockchain ts component which comes from service 
+- at that moment when we try the code we didn't get any thing that because we didn't define a route to that views
+- in app-route we have to defined route map to component such as 
+```sh
+const routes: Routes = [
+  { path:'', component: BlockchainViewerComponent}
+];
+```
 - 
