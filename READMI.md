@@ -113,4 +113,7 @@ in `ts` we have to call our blockchain service to allow sending data to it
 - `&nbsp` A non-breaking space is a space that will not break into a new line. Two words separated by a non-breaking space will stick together (not break into a new line). This is handy when breaking the words might be disruptive `it is important to be used in navbar to prevent new line and make code inline`
 - adding button for the link in navbar
 - to solve form error in apt.modules we add FormsModule in imports
-- 
+- tell that moment when we press create nothing happen except reloading the page with empty tx object
+- the reason is that all created transactions add directly but it is pended first waiting for the miming operation and checking its validation in order to solve that issue is to create another page contains pended transaction and button linked method to mine them
+
+
