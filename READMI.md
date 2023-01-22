@@ -88,5 +88,18 @@ const routes: Routes = [
 - creating the function it self in `blockchain ts` 
 - create setting view to set difficulty and reward amount and in this module we will use form model from angular to send data
 - `ng g component pages/settings`
+- editing setting component html and ts files
+in `ts` we have to call our blockchain service to allow sending data to it
+- editing html to be form and in field use `ngModel` as follows 
+```sh
+<div class="form-group">
+    <label>Mining Reward</label>
+    <input type="number" class="form-control" [(ngModel)]="blockchain.difficulty">
+  </div>
+```
+- this will allow change from and to synced together and allow send data
+- but this step required to add that form model from angular from `apt.modules` to import that module as follows `import { FormsModule } from '@angular/forms';`
+- add routing to setting page from `apt-routing`
+- make a button in navbar to route to it using routerLink
 
 
