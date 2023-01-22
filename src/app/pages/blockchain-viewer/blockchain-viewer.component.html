@@ -5,7 +5,15 @@
     *ngFor="let block of blocks;let elementIndex=index;"
         [block]="block"
         [index]="elementIndex"
+        (click)="showTransactions(block)"
   ></app-block-viewer>
+</div>
+<br><br>
+<div class="container">
+  <h1>Transaction Inside Block</h1>
+  <app-transactions-table
+    [transactions]="selectedBlock.transactions"
+  ></app-transactions-table>
 </div>
 
 
