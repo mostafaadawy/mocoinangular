@@ -43,6 +43,7 @@ export class BlockchainService {
   }
 
   addTransaction(tx) {
+    //adding transaction
     this.blockchainInstance.addTransaction(tx);
   }
 }
