@@ -115,5 +115,6 @@ in `ts` we have to call our blockchain service to allow sending data to it
 - to solve form error in apt.modules we add FormsModule in imports
 - tell that moment when we press create nothing happen except reloading the page with empty tx object
 - the reason is that all created transactions add directly but it is pended first waiting for the miming operation and checking its validation in order to solve that issue is to create another page contains pended transaction and button linked method to mine them
+- create component pendingTransactions `ng g component pending/pending-transactions`
 
 

@@ -9,6 +9,7 @@ import { BlockViewerComponent } from './pages/block-viewer/block-viewer.componen
 import { TransactionsTableComponent } from './pages/transactions-table/transactions-table.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { CreateTransactionComponent } from './pages/create-transaction/create-transaction.component';
+import { PendingTransactionsComponent } from './pending/pending-transactions/pending-transactions.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CreateTransactionComponent } from './pages/create-transaction/create-tr
     BlockViewerComponent,
     TransactionsTableComponent,
     SettingsComponent,
-    CreateTransactionComponent
+    CreateTransactionComponent,
+    PendingTransactionsComponent
   ],
   imports: [
     BrowserModule,
