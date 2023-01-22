@@ -11,6 +11,7 @@ export class CreateTransactionComponent implements OnInit{
   public walletKey;
   constructor(private blockchainService:BlockchainService) {
     this.walletKey= blockchainService.walletKeys[0];
+    //console.log('Wallet', this.walletKey.publicKey)
   }
   ngOnInit(){
     this.newTx=new Transaction();

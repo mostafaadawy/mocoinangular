@@ -21,6 +21,7 @@ import { CreateTransactionComponent } from './pages/create-transaction/create-tr
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
