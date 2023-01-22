@@ -9,15 +9,17 @@ import { Transaction } from '../../blockchain/blockchain'
 export class CreateTransactionComponent implements OnInit{
   public newTx;
   public walletKey;
+
   constructor(private blockchainService:BlockchainService) {
     this.walletKey= blockchainService.walletKeys[0];
     //console.log('Wallet', this.walletKey.publicKey)
-  }
-  ngOnInit(){
     this.newTx=new Transaction();
   }
+  ngOnInit(){
+    //this.newTx=new Transaction();
+  }
   createTransaction(){
-    this.newTx.fromAddress=this.walletKey.public
+    this.newTx.fromAddress=this.walletKey.publicKey
     this.newTx.signTransaction(this.walletKey.keyObj)
 
     this.blockchainService.addTransaction(this.newTx)
