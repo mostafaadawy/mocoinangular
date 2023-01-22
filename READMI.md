@@ -101,5 +101,5 @@ in `ts` we have to call our blockchain service to allow sending data to it
 - but this step required to add that form model from angular from `apt.modules` to import that module as follows `import { FormsModule } from '@angular/forms';`
 - add routing to setting page from `apt-routing`
 - make a button in navbar to route to it using routerLink
-
-
+- create component for creating transaction but o allow this we have to create method addtransaction in blockchain service that calls pendTransaction with the required date
+- and also we will need form ngModel to send data
