@@ -16,6 +16,7 @@ export class BlockchainService {
   }
 
   minePendingTransactions() {
+    //for pended transaction page
     this.blockchainInstance.minePendingTransactions(
       this.walletKeys[0].publicKey
     );
@@ -39,6 +40,7 @@ export class BlockchainService {
   }
 
   getPendingTransactions() {
+    //for pended transaction page
     return this.blockchainInstance.pendingTransactions;
   }
 
