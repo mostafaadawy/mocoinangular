@@ -27,6 +27,8 @@ do not forget to check the following links for angular
 - adding navbar and router link to nave to allaow routing angular syntax
 - adding service to allow blockchain service and wallet using `ng g service services/blockchain` where `g` for generate and `ng` for angular cli command `services` just to create a folder
 - modifying the service.ts `typescript` to have all required  methods.
+- don't forget to change the ts class to `implement OnInt` and fix error by creating `method ngOnInt`
+- remove throw error on `method ngOnInt` where it is default built in that way when we using fix capability of vscode editor 
 - before previous step we have to install github savjee repo using `npm i --save github:Savjee\SavjeeCoin`  but in this step i selected another way where i copied our blockchain classes file in the new project and import it to the service file but with some modifications to become typescript compatible this file can be found in our [repo](https://github.com/mostafaadawy/block_chain_coin)
 - to do that we need to add this file dependancy such as crypto and elliptic `npm i --save crypto-js` and `npm i --save elliptic`
 - for every service we want to allow to our app we have to call apply it through angular services
@@ -104,4 +106,7 @@ in `ts` we have to call our blockchain service to allow sending data to it
 - create component for creating transaction but o allow this we have to create method addtransaction in blockchain service that calls pendTransaction with the required date
 - and also we will need form ngModel to send data
 - then create transaction component `ng g component pages/create-transaction`
-- 
+- first time to use 'ngOnInt method` in this project where the importance of that method is it will be called and do something when reloaded where on submit it will reload the field to be blank to receive new data or in other word creates new empty object transaction
+- and here the first time to call class Transaction from blockchain
+- create method createTransaction that will assign our public key as fromAddress and sign the transaction then create new object of transaction
+
