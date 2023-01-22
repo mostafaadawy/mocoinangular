@@ -1,1 +1,9 @@
-<p>pending-transactions works!</p>
+<div class="container">
+  <h1>Pending Transaction</h1>
+  <app-transactions-table
+  [transactions]="pendingTransactions"
+></app-transactions-table>
+<button (click)="minePendingTransaction()" class="btn btn-primary">
+  Start Mining
+</button>
+</div>
